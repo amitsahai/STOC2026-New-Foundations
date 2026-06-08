@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="STOC 2026 workshop on new average-case problems, algorithmic ideas, and foundations for cryptography."
+    />
+    <meta name="theme-color" content="#071426" />
+    <title>Building New Algorithmic Foundations for Cryptography</title>
+    <link rel="preload" href="assets/algorithmic-horizon.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Building New Algorithmic Foundations for Cryptography",
+        "description": "A STOC 2026 workshop bringing together cryptography, algorithms, complexity, and average-case inference.",
+        "startDate": "2026-06-25T08:30:00-07:00",
+        "endDate": "2026-06-26T11:00:00-07:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "organizer": [
+          {
+            "@type": "Person",
+            "name": "Aayush Jain"
+          },
+          {
+            "@type": "Person",
+            "name": "Amit Sahai"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Workshop home">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span>
+          <strong>STOC 2026</strong>
+          <small>Workshop</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-nav-toggle
+      >
+        <span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#vision">Vision</a>
+        <a href="#themes">Themes</a>
+        <a href="#speakers">Speakers</a>
+        <a class="nav-cta" href="#details">Details</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="eyebrow reveal">
+            <span>STOC TheoryFest 2026</span>
+            <span class="eyebrow-line"></span>
+            <span>Two-morning workshop</span>
+          </div>
+
+          <h1 id="hero-title" class="reveal">
+            Building New
+            <span>Algorithmic Foundations</span>
+            for Cryptography
+          </h1>
+
+          <p class="hero-intro reveal">
+            What new average-case problems could power the next generation of
+            cryptography—and what new algorithms will we discover by trying to
+            break them?
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#vision">
+              Explore the workshop
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 5l5 5-5 5" />
+              </svg>
+            </a>
+            <a class="button button-quiet" href="#speakers">Meet the speakers</a>
+          </div>
+
+          <dl class="event-quicklook reveal" aria-label="Event details">
+            <div>
+              <dt>Date</dt>
+              <dd>June 25–26, 2026</dd>
+            </div>
+            <div>
+              <dt>Time</dt>
+              <dd>8:30–11:00 a.m.</dd>
+            </div>
+            <div>
+              <dt>Organizers</dt>
+              <dd>Aayush Jain · Amit Sahai</dd>
+            </div>
+          </dl>
+        </div>
+
+        <a class="scroll-cue" href="#vision" aria-label="Scroll to workshop vision">
+          <span>Scroll to discover</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section class="section vision" id="vision">
+        <div class="section-shell vision-grid">
+          <div class="section-heading reveal">
+            <p class="kicker">Why this workshop, why now</p>
+            <h2>Cryptography is at an algorithmic crossroads.</h2>
+          </div>
+
+          <div class="vision-copy reveal">
+            <p class="lead">
+              Theoretical cryptography has achieved a remarkable sequence of
+              feasibility results—from public-key encryption and zero knowledge
+              to fully homomorphic encryption and indistinguishability
+              obfuscation.
+            </p>
+            <p>
+              Yet much of that progress rests on a surprisingly small set of
+              hard-on-average problems. In the post-quantum setting, the
+              concentration is sharper still: basic public-key tasks are
+              dominated by noisy linear algebra, especially lattices and codes.
+            </p>
+            <p>
+              This workshop asks where the next generation of
+              <em>useful hardness conjectures</em> should come from—and invites
+              the algorithms community to help answer.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-shell">
+          <blockquote class="thesis-card reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <p>
+              Either new hardness conjectures lead to new constructions, or
+              their cryptanalysis produces algorithms and structural insight
+              of independent interest.
+            </p>
+            <footer>That is the win–win.</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section themes" id="themes">
+        <div class="section-shell">
+          <div class="section-heading themes-heading reveal">
+            <div>
+              <p class="kicker">The research agenda</p>
+              <h2>A broader search space for hardness.</h2>
+            </div>
+          </div>
+
+          <div class="theme-grid">
+            <article class="theme-card theme-card-featured reveal">
+              <span class="theme-number">01</span>
+              <div class="theme-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80">
+                  <circle cx="15" cy="53" r="4" />
+                  <circle cx="38" cy="22" r="4" />
+                  <circle cx="66" cy="40" r="4" />
+                  <circle cx="52" cy="66" r="4" />
+                  <path d="M18 50 35 26M42 23l21 15M64 44 54 62M48 64l-29-9M20 52l43-11" />
+                </svg>
+              </div>
+              <h3>Average-case structure</h3>
+              <p>
+                Use planted problems and high-dimensional inference to formulate
+                hardness conjectures that are natural, simple to state, and
+                open to meaningful attack.
+              </p>
+              <ul>
+                <li>Low-degree methods</li>
+                <li>Sum-of-squares</li>
+                <li>Statistical-query lower bounds</li>
+              </ul>
+            </article>
+
+            <article class="theme-card reveal">
+              <span class="theme-number">02</span>
+              <div class="theme-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80">
+                  <path d="M16 61 29 28l13 33 12-43 10 43" />
+                  <path d="M13 61h54M23 48h38M27 37h30" />
+                </svg>
+              </div>
+              <h3>Post-quantum diversity</h3>
+              <p>
+                Explore hardness conjectures from codes, multivariate methods,
+                combinatorial structures, and other underused sources of
+                computational hardness.
+              </p>
+            </article>
+
+            <article class="theme-card reveal">
+              <span class="theme-number">03</span>
+              <div class="theme-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80">
+                  <path d="M18 56c15-1 17-32 31-33 8 0 10 9 14 17" />
+                  <path d="M18 64c20-2 25-23 42-24" />
+                  <circle cx="18" cy="56" r="4" />
+                  <circle cx="49" cy="23" r="4" />
+                  <circle cx="63" cy="40" r="4" />
+                  <circle cx="60" cy="40" r="4" />
+                </svg>
+              </div>
+              <h3>Cryptographic usefulness</h3>
+              <p>
+                Ask which kinds of structure can plausibly support trapdoors,
+                succinct proofs, homomorphism, obfuscation, and other central
+                capabilities.
+              </p>
+            </article>
+
+            <article class="theme-card reveal">
+              <span class="theme-number">04</span>
+              <div class="theme-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80">
+                  <path d="m17 61 15-20 11 11 20-30" />
+                  <path d="M51 22h12v12" />
+                  <circle cx="17" cy="61" r="4" />
+                  <circle cx="32" cy="41" r="4" />
+                  <circle cx="43" cy="52" r="4" />
+                </svg>
+              </div>
+              <h3>Win–win cryptanalysis</h3>
+              <p>
+                Treat failed hardness conjectures as progress: new attacks can
+                expose decisive structure, sharpen conjectures, and reveal
+                algorithms worth knowing in their own right.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section speakers" id="speakers">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="kicker">Invited speakers</p>
+              <h2>Five perspectives on the frontier.</h2>
+            </div>
+            <p>
+              Talk titles and the detailed program will be announced as they
+              are finalized.
+            </p>
+          </div>
+
+          <div class="speaker-grid">
+            <article class="speaker-card reveal">
+              <div class="speaker-monogram" aria-hidden="true">
+                <span>PK</span>
+                <i></i><i></i><i></i>
+              </div>
+              <div class="speaker-content">
+                <p class="speaker-field">Average-case algorithms</p>
+                <h3>Pravesh Kothari</h3>
+                <p>
+                  Assistant Professor at Princeton University working on
+                  average-case complexity, high-dimensional statistics, and the
+                  sum-of-squares method.
+                </p>
+                <a
+                  href="https://www.cs.princeton.edu/people/profile/kothari"
+                  rel="noreferrer"
+                >
+                  Official profile <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="speaker-card reveal">
+              <div class="speaker-monogram" aria-hidden="true">
+                <span>RO</span>
+                <i></i><i></i><i></i>
+              </div>
+              <div class="speaker-content">
+                <p class="speaker-field">Complexity &amp; quantum</p>
+                <h3>Ryan O’Donnell</h3>
+                <p>
+                  Professor at Carnegie Mellon University whose research spans
+                  complexity theory, algorithms, analysis of Boolean functions,
+                  and quantum information.
+                </p>
+                <a href="https://www.cs.cmu.edu/~odonnell/" rel="noreferrer">
+                  Official profile <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="speaker-card reveal">
+              <div class="speaker-monogram" aria-hidden="true">
+                <span>NS</span>
+                <i></i><i></i><i></i>
+              </div>
+              <div class="speaker-content">
+                <p class="speaker-field">Quantum algorithms</p>
+                <h3>Noah Shutty</h3>
+                <p>
+                  A researcher at Google Quantum AI focused on quantum
+                  algorithms, quantum error correction, fault tolerance, and
+                  the coding-theoretic ideas connecting them.
+                </p>
+                <a
+                  href="https://simons.berkeley.edu/people/noah-shutty"
+                  rel="noreferrer"
+                >
+                  Research profile <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="speaker-card reveal">
+              <div class="speaker-monogram" aria-hidden="true">
+                <span>AS</span>
+                <i></i><i></i><i></i>
+              </div>
+              <div class="speaker-content">
+                <p class="speaker-field">Foundational cryptography</p>
+                <h3>Amit Sahai</h3>
+                <p>
+                  Symantec Endowed Chair at UCLA whose work has shaped
+                  foundational cryptography, including attribute-based
+                  encryption, functional encryption, and obfuscation.
+                </p>
+                <a href="https://web.cs.ucla.edu/~sahai/" rel="noreferrer">
+                  Official profile <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="speaker-card reveal">
+              <div class="speaker-monogram" aria-hidden="true">
+                <span>IH</span>
+                <i></i><i></i><i></i>
+              </div>
+              <div class="speaker-content">
+                <p class="speaker-field">Combinatorial hardness</p>
+                <h3>Isaac Hair</h3>
+                <p>
+                  A theoretical computer scientist exploring cryptography from
+                  combinatorial average-case hardness conjectures, including
+                  public-key encryption based on planted clique and high-error
+                  CSPs.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" id="details">
+        <div class="details-art" aria-hidden="true"></div>
+        <div class="section-shell details-content">
+          <div class="details-copy reveal">
+            <p class="kicker">Join the conversation</p>
+            <h2>Help build what comes after today’s cryptographic foundations.</h2>
+            <p>
+              For algorithms researchers, cryptographers, complexity theorists,
+              students, and anyone curious about the hardness—and easiness—of
+              average-case problems.
+            </p>
+          </div>
+
+          <div class="detail-cards reveal">
+            <div>
+              <span>Date</span>
+              <strong>June 25–26</strong>
+              <small>Thursday &amp; Friday</small>
+            </div>
+            <div>
+              <span>Time</span>
+              <strong>8:30–11:00</strong>
+              <small>Each morning</small>
+            </div>
+            <div>
+              <span>Venue</span>
+              <strong>STOC 2026</strong>
+              <small>TheoryFest workshop</small>
+            </div>
+          </div>
+
+          <div class="organizers reveal">
+            <p>Organized by</p>
+            <a href="https://csd.cmu.edu/people/faculty/aayush-jain" rel="noreferrer">
+              <span>AJ</span>
+              <strong>Aayush Jain</strong>
+              <small>Carnegie Mellon University</small>
+            </a>
+            <a href="https://web.cs.ucla.edu/~sahai/" rel="noreferrer">
+              <span>AS</span>
+              <strong>Amit Sahai</strong>
+              <small>UCLA</small>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <p>
+        Building New Algorithmic Foundations for Cryptography
+        <span>·</span> STOC 2026
+      </p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
