@@ -628,7 +628,7 @@ a {
 .thesis-card {
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 1.5rem;
   align-items: center;
   margin: clamp(4rem, 8vw, 7rem) 0 0;
@@ -650,14 +650,6 @@ a {
   background-size: 2.1rem 2.1rem;
   mask-image: linear-gradient(90deg, transparent 40%, black);
   pointer-events: none;
-}
-
-.quote-mark {
-  align-self: start;
-  color: var(--coral);
-  font-family: var(--serif);
-  font-size: 6rem;
-  line-height: 0.7;
 }
 
 .thesis-card p {
@@ -1691,11 +1683,10 @@ a {
   }
 
   .thesis-card {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
   }
 
   .thesis-card footer {
-    grid-column: 2;
     writing-mode: initial;
   }
 
