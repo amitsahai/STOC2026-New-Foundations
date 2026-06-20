@@ -1287,10 +1287,8 @@ a {
 }
 
 .tutorial-parts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 1.2rem;
-  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.95rem;
 }
 
 .tutorial-parts p {
@@ -1298,8 +1296,20 @@ a {
 }
 
 .tutorial-parts b {
-  margin-right: 0.35rem;
+  display: block;
   color: var(--white);
+  font-family: var(--serif);
+  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.28;
+}
+
+.tutorial-parts small {
+  display: block;
+  margin-top: 0.3rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.72rem;
   font-weight: 750;
 }
 
