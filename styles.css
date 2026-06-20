@@ -1307,10 +1307,13 @@ a {
 
 .tutorial-parts small {
   display: block;
-  margin-top: 0.3rem;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.72rem;
-  font-weight: 750;
+  margin-top: 0.35rem;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2.3vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
 }
 
 .talk-title {
