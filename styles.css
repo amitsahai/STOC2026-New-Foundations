@@ -1337,12 +1337,12 @@ a {
 }
 
 .talk-title.talk-title-final {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--white);
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
   font-weight: 400;
-  letter-spacing: -0.01em;
-  line-height: 1.35;
+  letter-spacing: -0.015em;
+  line-height: 1.28;
   text-transform: none;
 }
 
