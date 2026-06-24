@@ -1336,6 +1336,16 @@ a {
   font-size: 0.58rem;
 }
 
+.talk-title.talk-title-final {
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  text-transform: none;
+}
+
 .schedule-list .schedule-break {
   padding-top: 1rem;
   padding-bottom: 1rem;
